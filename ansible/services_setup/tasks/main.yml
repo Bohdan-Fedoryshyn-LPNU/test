@@ -1,0 +1,16 @@
+  - name: copy docker-compose.yml
+    remote_user: ubuntu
+    copy:
+        src: /home/ubuntu/tes/docker-compose.yml
+        dest: /home/ubuntu/docker-compose.yml
+  
+  #- name: Tear down existing services
+  #  community.docker.docker_compose:
+  #      project_src: /home/ubuntu/
+  #      state: absent
+  
+  - name: Docker Run
+    remote_user: ubuntu
+    ansible.builtin.shell: docker-compose up -d
+    args:
+      executable: /bin/bash
