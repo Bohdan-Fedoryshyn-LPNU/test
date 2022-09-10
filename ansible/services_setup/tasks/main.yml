@@ -1,8 +1,8 @@
   - name: copy docker-compose.yml
     remote_user: ubuntu
     copy:
-        src: /home/ubuntu/tes/docker-compose.yml
-        dest: /home/ubuntu/docker-compose.yml
+        src: ../../../docker-compose.yml
+        dest: /home/$USER/docker-compose.yml
   
   #- name: Tear down existing services
   #  community.docker.docker_compose:

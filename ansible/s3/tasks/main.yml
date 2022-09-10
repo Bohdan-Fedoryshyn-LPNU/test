@@ -7,11 +7,16 @@
         state: directory
         mode: 0777
     with_items:
-      - /home/ubuntu/wp-content
-      - /home/ubuntu/db_data
+      - /home/$USER/wp-content
+      - /home/$USER/db_data
+  
+  - name: change fuse.conf
+    copy:
+        src: ../../../fuse.conf
+        dest: /etc/fuse.conf
 
   - name: Mount s3 to directory
     remote_user: ubuntu
-    ansible.builtin.shell: s3fs -o iam_role=auto -o allow_other -o nonempty -o endpoint=eu-central-1 -o url="https://s3-eu-central-1.amazonaws.com" bruno-volume /home/ubuntu/wp-content
+    ansible.builtin.shell: s3fs -o iam_role=auto -o allow_other -o nonempty -o endpoint=eu-central-1 -o url="https://s3-eu-central-1.amazonaws.com" bruno-volume /home/$USER/wp-content
     args:
       executable: /bin/bash
