@@ -1,0 +1,49 @@
+[
+    {
+        "Name": "ubuntu_default",
+        "Id": "c3250830b35376390c184deb1fb0f8a752c626aba3b342ad6624d16215a40595",
+        "Created": "2022-09-09T15:45:54.774012437Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "172.18.0.0/16",
+                    "Gateway": "172.18.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": true,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "d839b635e6b3fd18e673d4d47d5901bbae6fb303552fd3c56f683915949a915b": {
+                "Name": "ubuntu_db_1",
+                "EndpointID": "80a81f66f9db74a5264f150afd63c114a9d3c0abae58acb93dc010e870db1c7d",
+                "MacAddress": "02:42:ac:12:00:02",
+                "IPv4Address": "172.18.0.2/16",
+                "IPv6Address": ""
+            },
+            "e773a908d18d8d552da21b53e68c9dc947c167a7dc913102febe27d497428fc4": {
+                "Name": "ubuntu_wordpress_1",
+                "EndpointID": "244addc47a9d9fcf504a5f2ca648f441d9d877298fb7f5f8e1d73714bab2af87",
+                "MacAddress": "02:42:ac:12:00:03",
+                "IPv4Address": "172.18.0.3/16",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {},
+        "Labels": {
+            "com.docker.compose.network": "default",
+            "com.docker.compose.project": "ubuntu",
+            "com.docker.compose.version": "1.25.1-rc1"
+        }
+    }
+]
