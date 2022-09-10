@@ -24,18 +24,18 @@
         },
         "ConfigOnly": false,
         "Containers": {
-            "d839b635e6b3fd18e673d4d47d5901bbae6fb303552fd3c56f683915949a915b": {
-                "Name": "ubuntu_db_1",
-                "EndpointID": "80a81f66f9db74a5264f150afd63c114a9d3c0abae58acb93dc010e870db1c7d",
-                "MacAddress": "02:42:ac:12:00:02",
-                "IPv4Address": "172.18.0.2/16",
-                "IPv6Address": ""
-            },
-            "e773a908d18d8d552da21b53e68c9dc947c167a7dc913102febe27d497428fc4": {
+            "c7b37f27f0ea257bf23f98c991902d6e0e291e3b15874f51ce1ccfc80350a50e": {
                 "Name": "ubuntu_wordpress_1",
-                "EndpointID": "244addc47a9d9fcf504a5f2ca648f441d9d877298fb7f5f8e1d73714bab2af87",
+                "EndpointID": "3c1fb2e427d2dc7345a193dd0f90a206cee39c05a8b52391ed27af8a3b7fe9a4",
                 "MacAddress": "02:42:ac:12:00:03",
                 "IPv4Address": "172.18.0.3/16",
+                "IPv6Address": ""
+            },
+            "d20f99a9acdfae58e3de7823344bf42b382944aa75f17d6474ba1e56337bcccc": {
+                "Name": "ubuntu_db_1",
+                "EndpointID": "b0b1afc09096d045d1ef501fd137e03d83ac0828a60b83813ed9bce27b5c1b31",
+                "MacAddress": "02:42:ac:12:00:02",
+                "IPv4Address": "172.18.0.2/16",
                 "IPv6Address": ""
             }
         },
